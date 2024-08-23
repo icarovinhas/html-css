@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 100vh;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do
+        <!-- Tamanho padrão de 300x150 -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scolling="yes">
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+        </iframe>
+        para entender a programar
+    </p>
+
+    
+        <iframe src="fundo006.html" frameborder="0">
+            <p>Infelizmente sua página n carregou</p>
+        </iframe>
+    
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, est eligendi? Porro ipsam ea pariatur nam reprehenderit illo. Nobis ad mollitia repellendus veritatis reprehenderit. Sunt nobis soluta dignissimos nam perferendis.</p>
+
+    <ul>
+        <li><a href="exercicio1.html" target="frame">Primeria Página</a></li>
+        <li><a href="exercicio2.html" target="frame">Segunda Página</a></li>
+        <li><a href="exercicio3.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus velit repellat fuga laboriosam ex, dignissimos aliquid cumque ratione modi natus officiis voluptas itaque nulla quaerat esse quod quisquam a. Iste. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque, modi consequuntur sunt temporibus, neque est eius autem quis quod magnam recusandae animi corporis delectus. Explicabo non autem deleniti hic?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi architecto nisi molestias neque ea deserunt commodi rerum fugit, quas mollitia ipsam magni aliquid. Cupiditate reprehenderit sunt tempora esse in. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis exercitationem nam temporibus facilis et architecto soluta assumenda officiis quis. Sunt velit nemo distinctio quo accusamus blanditiis saepe suscipit excepturi asperiores.</p>"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi architecto nisi molestias neque ea deserunt commodi rerum fugit, quas mollitia ipsam magni aliquid. Cupiditate reprehenderit sunt tempora esse in. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis exercitationem nam temporibus facilis et architecto soluta assumenda officiis quis. Sunt velit nemo distinctio quo accusamus blanditiis saepe suscipit excepturi asperiores.</p>
+
+    <iframe src="fundo007.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"></iframe>
+</body>
+</html>

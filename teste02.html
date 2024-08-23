@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        main {
+            min-width: 300px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: aquamarine;
+            width: 20vw;
+            height: 83vh;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p#Resultado {
+            padding-top: 20px;
+        }
+
+        input {
+            padding: 2px;
+            margin: 10px;
+        }
+
+        footer {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="cadastro.php" method="get">
+            <p>
+                <label for="nome">Nome</label> <br>
+                <input type="text" name="nome" id="nome" size="19" required minlength="3" placeholder="digite o nome do usuário" autocomplete="username">
+            </p>
+            <p>
+                <label for="data">Data Nascimento</label> <br>
+                <input type="datetime-local" name="data" id="data">
+            </p>
+            <p>
+                <input type="submit" value="Imprimir">
+            </p>
+            <p id="Resultado">
+                <label for="resultado">Resultado</label> <br>
+                <input type="tel" name="resultado" id="resultado">
+            </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito por MIV</p>
+    </footer>
+</body>
+</html>
